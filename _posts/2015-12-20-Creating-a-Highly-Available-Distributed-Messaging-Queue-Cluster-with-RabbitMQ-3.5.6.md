@@ -7,9 +7,9 @@ tags: fiction
 subclass: 'post tag-fiction'
 categories: 'casper'
 navigation: True
----
 logo: 'assets/images/ghost.png'
 cover: 'assets/images/cover4.jpg'
+---
 
 Creating a Highly Available Distributed Messaging Queue Cluster with RabbitMQ-3.5.6
 What is rabbitmq?
