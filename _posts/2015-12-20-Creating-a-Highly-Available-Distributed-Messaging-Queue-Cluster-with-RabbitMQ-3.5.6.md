@@ -8,7 +8,7 @@ subclass: 'post tag-fiction'
 categories: 'casper'
 navigation: True
 logo: 'assets/images/ghost.png'
-cover: 'assets/images/cover4.jpg'
+cover: 'assets/images/Minion-in-Despicable-Me-2-Wallpaper-HD-1080p.jpg'
 ---
 
 Creating a Highly Available Distributed Messaging Queue Cluster with RabbitMQ-3.5.6
