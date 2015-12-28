@@ -5,7 +5,7 @@ title: Creating a Highly Available Distributed Messaging System
 date:   2015-12-19 10:18:00
 tags: fiction
 subclass: 'post tag-fiction'
-categories: 'casper'
+categories: 'blog'
 navigation: True
 logo: 'assets/images/ghost.png'
 cover: 'assets/images/Minion-in-Despicable-Me-2-Wallpaper-HD-1080p.jpg'

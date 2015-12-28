@@ -19,7 +19,7 @@ image: 'assets/images/4538_minions.jpg'
 
 short_url: 'hellodk.github.io/'
 #google_analytics: UA-69281367-1
-disqus: username
+disqus: hellodk
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: '/'
 
