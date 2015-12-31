@@ -3,8 +3,8 @@ layout: post
 cover: false
 title: Creating a Highly Available Distributed Messaging System
 date:   2015-12-19 10:18:00
-tags: fiction
-subclass: 'post tag-fiction'
+tags: tutorials
+subclass: 'post tag-tutorials'
 categories: 'blog'
 navigation: True
 logo: 'assets/images/ghost.png'
