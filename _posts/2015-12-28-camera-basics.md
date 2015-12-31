@@ -3,7 +3,7 @@ layout: post
 cover: false
 title: Camera Basics
 date:   1963-08-28 10:18:00
-tags: tutorials
+tags: tutorials photography
 subclass: 'post tag-tutorials'
 categories: 'casper'
 navigation: True

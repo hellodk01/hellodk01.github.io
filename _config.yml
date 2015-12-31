@@ -14,14 +14,14 @@ author: 'Deepak Kumar Gupta'
 nickname: casper
 bio: 'A full time technologist cum foodie. He spends most of the time playing with open source tools and prefers hanging out with friends. Deepak has been a taveller since ages, besides being a hardcore biker and loves doing photogrpahy as hobby.'
 location: 'Bangalore, INDIA'
-url: 'http://hellodk.github.io/jasper/'
+url: 'http://hellodk.github.io/'
 image: 'assets/images/casper.png'
 
-short_url: 'hellodk.github.io/jasper/'
+short_url: 'hellodk.github.io/'
 #google_analytics: UA-69281367-1
 disqus: username
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /jasper/
+baseurl: /
 
 # Permalinks
 permalink: /:title
@@ -59,8 +59,8 @@ repo: jasper
 branch: master
 relative_source: ../jasper/
 destination: ../jasper-pages/
-production_url:  https://hellodk.github.io/jasper/
-source_url:      https://github.com/hellodk/jasper/
+production_url:  https://hellodk.github.io/
+source_url:      https://github.com/hellodk/
 
 exclude:
   - README.md
