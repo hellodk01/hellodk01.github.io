@@ -10,3 +10,7 @@ h2 {
    width: 100%; 
 }
 
+body {
+	background="assets/images/404_error_minion.jpg"
+	background-color: #cccccc;
+}
