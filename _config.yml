@@ -18,8 +18,8 @@ url: 'http://hellodk01.github.io/jasper/'
 image: 'assets/images/casper.png'
 
 short_url: 'hellodk01.github.io/jasper/'
-google_analytics: UA-69281367-1
-disqus: username
+#google_analytics: UA-69281367-1
+#disqus: username
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: /
 
@@ -55,8 +55,8 @@ exclude: [vendor]
 safe: false
 lsi: false
 username: hellodk01
-repo: jasper
-branch: master
+#repo: jasper
+#branch: master
 #relative_source: ../jasper/
 #destination: ../jasper-pages/
 #production_url:  https://hellodk01.github.io/
