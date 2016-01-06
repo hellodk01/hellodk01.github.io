@@ -7,8 +7,18 @@
   <channel>
     <title>Curosity is the most powerful thing you own</title>
     <link>http://hellodk.github.io/</link>
-    <description>A beautiful narrative written an elegant publishing platform. The story begins here.</description>
-    <pubDate>Sat, 19 Dec 2015 15:48:00 +0530</pubDate>
+    <description>A beautiful narrative written over an elegant publishing platform. The story begins here.</description>
+    <pubDate>Mon, 28 Dec 2015 15:48:00 +0530</pubDate>
+    <item>
+      <title>About</title>
+      <link>http://hellodk.github.io//about</link>
+      <description>Write Things about the website
+
+
+</description>
+      <pubDate>Mon, 28 Dec 2015 15:48:00 +0530</pubDate>
+      <dc:date>2015-12-28T15:48:00+05:30</dc:date>
+    </item>
     <item>
       <title>Creating a Highly Available Distributed Messaging System</title>
       <link>http://hellodk.github.io//Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6</link>
@@ -46,16 +56,6 @@ What is rabbitmq?
       <pubDate>Wed, 28 Aug 1963 15:48:00 +0530</pubDate>
       <dc:date>1963-08-28T15:48:00+05:30</dc:date>
     </item>
-    <item>
-      <title>About</title>
-      <link>http://hellodk.github.io//about</link>
-      <description>Write Things about the website
-
-
-</description>
-      <pubDate>Wed, 28 Aug 1963 15:48:00 +0530</pubDate>
-      <dc:date>1963-08-28T15:48:00+05:30</dc:date>
-    </item>
-    <dc:date>2015-12-19T15:48:00+05:30</dc:date>
+    <dc:date>2015-12-28T15:48:00+05:30</dc:date>
   </channel>
 </rss>
