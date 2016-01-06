@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <description>A beautiful narrative written with an elegant publishing platform. The story begins here.</description>
+    <description>A beautiful narrative written an elegant publishing platform. The story begins here.</description>
     <link>http://hellodk.github.io///</link>
     <atom:link href="http://hellodk.github.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 02 Jan 2016 16:17:17 +0530</pubDate>
-    <lastBuildDate>Sat, 02 Jan 2016 16:17:17 +0530</lastBuildDate>
+    <pubDate>Thu, 07 Jan 2016 01:15:23 +0530</pubDate>
+    <lastBuildDate>Thu, 07 Jan 2016 01:15:23 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -113,7 +113,7 @@ sudo rabbitmqctl set&lt;/em&gt;permissions -p / &lt;user id&gt; &amp;quot;.&lt;e
         <category>tutorials</category>
         
         
-        <category>dk</category>
+        <category>casper</category>
         
       </item>
     
@@ -656,7 +656,7 @@ c.draw = function() {
         <category>photography</category>
         
         
-        <category>dk</category>
+        <category>casper</category>
         
       </item>
     
