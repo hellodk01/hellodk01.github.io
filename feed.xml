@@ -5,8 +5,8 @@
     <description>A beautiful narrative written an elegant publishing platform. The story begins here.</description>
     <link>http://hellodk.github.io///</link>
     <atom:link href="http://hellodk.github.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 07 Jan 2016 01:19:34 +0530</pubDate>
-    <lastBuildDate>Thu, 07 Jan 2016 01:19:34 +0530</lastBuildDate>
+    <pubDate>Thu, 07 Jan 2016 01:38:54 +0530</pubDate>
+    <lastBuildDate>Thu, 07 Jan 2016 01:38:54 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -38,13 +38,15 @@ In the /etc/hosts file of your system, append the hostname corresponding to the 
 
 &lt;p&gt;a.b.c.d with hostname as rabbitmq1
 e.f.g.h with hostname as rabbitmq2
-i.j.k.l with hostname as rabbitmq3
-then in the /etc/hosts on all the 3 machines, add the below lines:&lt;/p&gt;
+i.j.k.l with hostname as rabbitmq3&lt;/p&gt;
+
+&lt;p&gt;then in the /etc/hosts on all the 3 machines, add the below lines:&lt;/p&gt;
 
 &lt;p&gt;a.b.c.d rabbitmq1
 e.f.g.h rabbitmq2
-i.j.k.l rabbitmq3
-and that should suffice to solve your issues with host entries. Rabbitmq is very sensitive towards hostnames, hence this step is of quiet importance. Once done, do verify if the nodes are ping-able from every node.&lt;/p&gt;
+i.j.k.l rabbitmq3&lt;/p&gt;
+
+&lt;p&gt;and that should suffice to solve your issues with host entries. Rabbitmq is very sensitive towards hostnames, hence this step is of quiet importance. Once done, do verify if the nodes are ping-able from every node.&lt;/p&gt;
 
 &lt;p&gt;For installing rabbitmq-server, use the below commands:
 sudo apt-get install -fy erlang-nox python-pip git-core python-setuptools git-core
