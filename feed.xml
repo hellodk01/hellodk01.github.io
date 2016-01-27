@@ -5,8 +5,8 @@
     <description>A beautiful narrative written an elegant publishing platform. The story begins here.</description>
     <link>http://hellodk.github.io///</link>
     <atom:link href="http://hellodk.github.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 28 Jan 2016 03:11:52 +0530</pubDate>
-    <lastBuildDate>Thu, 28 Jan 2016 03:11:52 +0530</lastBuildDate>
+    <pubDate>Thu, 28 Jan 2016 03:14:07 +0530</pubDate>
+    <lastBuildDate>Thu, 28 Jan 2016 03:14:07 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -357,7 +357,7 @@ sudo rabbitmqctl set&lt;/em&gt;permissions -p / &lt;user id&gt; &amp;quot;.&lt;e
       </item>
     
       <item>
-        <title>Understanding Git-FLow</title>
+        <title>Understanding Git-Flow</title>
         <description>&lt;p&gt;Understanding Git Flow for(ubuntu-14.04):&lt;/p&gt;
 
 &lt;p&gt;what is git flow?

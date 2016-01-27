@@ -242,7 +242,7 @@ nodetool -host 10.60.8.23 ring</p>
 	</item>
 
 	<item>
-	  <title>Understanding Git-FLow</title>
+	  <title>Understanding Git-Flow</title>
 	  <link>//understanding_git_flow</link>
 	  <author>Deepak Kumar Gupta</author>
 	  <pubDate>2015-11-09T00:00:00+05:30</pubDate>
