@@ -5,8 +5,8 @@
     <description>A beautiful narrative written an elegant publishing platform. The story begins here.</description>
     <link>http://hellodk.github.io///</link>
     <atom:link href="http://hellodk.github.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 28 Jan 2016 02:41:41 +0530</pubDate>
-    <lastBuildDate>Thu, 28 Jan 2016 02:41:41 +0530</lastBuildDate>
+    <pubDate>Thu, 28 Jan 2016 02:52:50 +0530</pubDate>
+    <lastBuildDate>Thu, 28 Jan 2016 02:52:50 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -238,6 +238,54 @@ sudo rabbitmqctl set&lt;/em&gt;permissions -p / &lt;user id&gt; &amp;quot;.&lt;e
         
         
         <category>casper</category>
+        
+      </item>
+    
+      <item>
+        <title>Going Agntless with Ansible</title>
+        <description>&lt;p&gt;While looking for a light yet powerful Configuration Management tool, I was going through some of the various available tools, and came across Ansible. After having a quick look at the features, something which caught my attention: &amp;quot;Ansible is agent-less&amp;quot;, hence I decided to give it a try. Having used Ansible for some around more than 8+ months configuration management, I personally feel...Ansible is awesome!!
+So what is Ansible? Well, it is a configuration management tool, and it empowers you to configure/orchestrate multiple systems at great ease, saving a lot of downtime and resources.
+So how does it does that? The answer lies with ssh keys based agent forwarding. Ansible uses ssh for logging to the remote system, and can execute package installation, shell commands, install/update package management systems, clone git and anything under the sun you need for configuration management.
+So why don&amp;#39;t you try your hands on Ansible and experience it&amp;#39;s awesomeness....all you need to do is to install it on your host system.&lt;/p&gt;
+
+&lt;p&gt;Ansible does not have it&amp;#39;s own process, and unlike other configuration tolls available, it is agent-less!!&lt;/p&gt;
+
+&lt;p&gt;Ansible ships in 2 forms:
+1. Core Ansible
+2. Ansible Tower&lt;/p&gt;
+
+&lt;p&gt;Installation:
+1. OS package manager:
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:ansible/ansiblesudo apt-get update
+sudo apt-get install ansible
+2. Via python pip:
+sudo pip install ansible&lt;/p&gt;
+
+&lt;p&gt;Ansible uses a configuration file, called host files for doing ssh to the remote machines. By default it is located in /etc/ansible/hosts
+All you need to do is to add the host ip and the ssh_username to the file, and the public key of your host to the remote machine and you are all set to go!!&lt;/p&gt;
+
+&lt;p&gt;Commands:
+ansible all -i ansible_hosts -m ping
+ansible all -m ping -u deepak
+ansible -m shell -a &amp;#39;free -m&amp;#39; host1
+ansible all -m shell -a &amp;#39;free -m&amp;#39; -u dk&lt;/p&gt;
+
+&lt;p&gt;Playbooks are Ansible’s configuration, deployment, and orchestration language. They can describe a policy you want your remote systems to enforce, or a set of steps in a general IT process.&lt;/p&gt;
+
+&lt;p&gt;Playbooks are written in YAML language, and comprises of Plays&lt;/p&gt;
+
+&lt;p&gt;Running a Playbook in Ansible:
+ansible-playbook playbook.yml -f 10&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Apr 2015 15:48:00 +0530</pubDate>
+        <link>http://hellodk.github.io///going_agentless_with_ansible</link>
+        <guid isPermaLink="true">http://hellodk.github.io///going_agentless_with_ansible</guid>
+        
+        <category>tutorials</category>
+        
+        
+        <category>dk</category>
         
       </item>
     

@@ -29,6 +29,18 @@ What is rabbitmq?
       <dc:date>2015-12-19T15:48:00+05:30</dc:date>
     </item>
     <item>
+      <title>Going Agntless with Ansible</title>
+      <link>http://hellodk.github.io//going_agentless_with_ansible</link>
+      <description>While looking for a light yet powerful Configuration Management tool, I was going through some of the various available tools, and came across Ansible. After having a quick look at the features, something which caught my attention: &quot;Ansible is agent-less&quot;, hence I decided to give it a try. Having used Ansible for some around more than 8+ months configuration management, I personally feel...Ansible is awesome!!
+So what is Ansible? Well, it is a configuration management tool, and it empowers you to configure/orchestrate multiple systems at great ease, saving a lot of downtime and resources.
+So how does it does that? The answer lies with ssh keys based agent forwarding. Ansible uses ssh for logging to the remote system, and can execute package installation, shell commands, install/update package management systems, clone git and anything under the sun you need for configuration management.
+So why don't you try your hands on Ansible and experience it's awesomeness....all you need to do is to install it on your host system.
+
+</description>
+      <pubDate>Mon, 06 Apr 2015 15:48:00 +0530</pubDate>
+      <dc:date>2015-04-06T15:48:00+05:30</dc:date>
+    </item>
+    <item>
       <title>Camera Basics</title>
       <link>http://hellodk.github.io//camera-basics</link>
       <description>A basic tutorial on handling a DSLR for beginners.
