@@ -5,8 +5,8 @@
     <description>A beautiful narrative written an elegant publishing platform. The story begins here.</description>
     <link>http://hellodk.github.io///</link>
     <atom:link href="http://hellodk.github.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 28 Jan 2016 03:21:51 +0530</pubDate>
-    <lastBuildDate>Thu, 28 Jan 2016 03:21:51 +0530</lastBuildDate>
+    <pubDate>Thu, 28 Jan 2016 03:24:49 +0530</pubDate>
+    <lastBuildDate>Thu, 28 Jan 2016 03:24:49 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -398,9 +398,11 @@ Hotfix branches? [hotfix/]
 Support branches? [support/] 
 Version tag prefix? [] &lt;/p&gt;
 
-&lt;p&gt;******************&lt;strong&gt;&lt;em&gt;Creating/Deleting a tag&lt;/em&gt;&lt;/strong&gt;***************************
-Deleting a tag:
-$ git tag -d &lt;tag_name&gt;&lt;/p&gt;
+&lt;p&gt;Creating/Deleting a tag:&lt;/p&gt;
+
+&lt;p&gt;Deleting a tag:&lt;/p&gt;
+
+&lt;p&gt;$ git tag -d &lt;tag_name&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Nov 2015 00:00:00 +0530</pubDate>
         <link>http://hellodk.github.io///understanding_git_flow</link>
