@@ -288,25 +288,9 @@ Hotfix branches? [hotfix/]
 Support branches? [support/] 
 Version tag prefix? [] </p>
 
-<p>******************<strong><em>Creating/Deleting a tag</em></strong>***************************</p>
-
-<h2>Deleting a tag:</h2>
-
-<p>dk@typHooN:~/git/kndnc$ git tag -d ndnc<em>crm</em>api 
-Deleted tag &#39;ndnc<em>crm</em>api&#39; (was 61b95e7)
-dk@typHooN:~/git/kndnc$ git tag -d ndnc<em>grafana</em>integration 
-Deleted tag &#39;ndnc<em>grafana</em>integration&#39; (was 8d955ec)
-dk@typHooN:~/git/kndnc$ git status 
-On branch develop
-Your branch is up-to-date with &#39;origin/develop&#39;.</p>
-
-<p>nothing to commit, working directory clean
-dk@typHooN:~/git/kndnc$ git push origin :refs/tags/ndnc<em>crm</em>api
-To git@bitbucket.org:knowlarity<em>team/kndnc.git
- - [deleted]         ndnc</em>crm<em>api
-dk@typHooN:~/git/kndnc$ git push origin :refs/tags/ndnc</em>grafana<em>integration
-To git@bitbucket.org:knowlarity</em>team/kndnc.git
- - [deleted]         ndnc<em>grafana</em>integration</p>
+<p>******************<strong><em>Creating/Deleting a tag</em></strong>***************************
+Deleting a tag:
+$ git tag -d <tag_name></p>
 
 	  ]]></description>
 	</item>

@@ -5,8 +5,8 @@
     <description>A beautiful narrative written an elegant publishing platform. The story begins here.</description>
     <link>http://hellodk.github.io///</link>
     <atom:link href="http://hellodk.github.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 28 Jan 2016 03:18:20 +0530</pubDate>
-    <lastBuildDate>Thu, 28 Jan 2016 03:18:20 +0530</lastBuildDate>
+    <pubDate>Thu, 28 Jan 2016 03:21:51 +0530</pubDate>
+    <lastBuildDate>Thu, 28 Jan 2016 03:21:51 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -398,25 +398,9 @@ Hotfix branches? [hotfix/]
 Support branches? [support/] 
 Version tag prefix? [] &lt;/p&gt;
 
-&lt;p&gt;******************&lt;strong&gt;&lt;em&gt;Creating/Deleting a tag&lt;/em&gt;&lt;/strong&gt;***************************&lt;/p&gt;
-
-&lt;h2&gt;Deleting a tag:&lt;/h2&gt;
-
-&lt;p&gt;dk@typHooN:~/git/kndnc$ git tag -d ndnc&lt;em&gt;crm&lt;/em&gt;api 
-Deleted tag &amp;#39;ndnc&lt;em&gt;crm&lt;/em&gt;api&amp;#39; (was 61b95e7)
-dk@typHooN:~/git/kndnc$ git tag -d ndnc&lt;em&gt;grafana&lt;/em&gt;integration 
-Deleted tag &amp;#39;ndnc&lt;em&gt;grafana&lt;/em&gt;integration&amp;#39; (was 8d955ec)
-dk@typHooN:~/git/kndnc$ git status 
-On branch develop
-Your branch is up-to-date with &amp;#39;origin/develop&amp;#39;.&lt;/p&gt;
-
-&lt;p&gt;nothing to commit, working directory clean
-dk@typHooN:~/git/kndnc$ git push origin :refs/tags/ndnc&lt;em&gt;crm&lt;/em&gt;api
-To git@bitbucket.org:knowlarity&lt;em&gt;team/kndnc.git
- - [deleted]         ndnc&lt;/em&gt;crm&lt;em&gt;api
-dk@typHooN:~/git/kndnc$ git push origin :refs/tags/ndnc&lt;/em&gt;grafana&lt;em&gt;integration
-To git@bitbucket.org:knowlarity&lt;/em&gt;team/kndnc.git
- - [deleted]         ndnc&lt;em&gt;grafana&lt;/em&gt;integration&lt;/p&gt;
+&lt;p&gt;******************&lt;strong&gt;&lt;em&gt;Creating/Deleting a tag&lt;/em&gt;&lt;/strong&gt;***************************
+Deleting a tag:
+$ git tag -d &lt;tag_name&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Nov 2015 00:00:00 +0530</pubDate>
         <link>http://hellodk.github.io///understanding_git_flow</link>
