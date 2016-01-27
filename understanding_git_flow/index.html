@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>Creating a Highly Available Distributed Messaging System</title>
+    <title>Understanding Git-FLow</title>
     <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written an elegant publishing platform. The story begins here." />
 
     <meta name="HandheldFriendly" content="True" />
@@ -89,7 +89,7 @@
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
 
-<header class="main-header post-head " style="background-image: url(/assets/images/Minion-in-Despicable-Me-2-Wallpaper-HD-1080p.jpg) ">
+<header class="main-header post-head " style="background-image: url(/assets/images/cover4.jpg) ">
     <nav class="main-nav  overlay  clearfix">
         <a class="blog-logo" href="/"><img src="/assets/images/ghost.png" alt="Blog Logo" /></a>
         
@@ -103,10 +103,10 @@
     <article class="post tag-tutorials">
 
         <header class="post-header">
-            <h1 class="post-title">Creating a Highly Available Distributed Messaging System</h1>
+            <h1 class="post-title">Understanding Git-FLow</h1>
             <section class="post-meta">
             <!-- <a href='/'>Deepak Kumar Gupta</a> -->
-            <time class="post-date" datetime="2015-12-19">19 Dec 2015</time>
+            <time class="post-date" datetime="2015-11-09">09 Nov 2015</time>
                 <!-- [[tags prefix=" on "]] -->
                  
                 on 
@@ -121,100 +121,65 @@
 
         <section class="post-content">
             
-            <p>Creating a Highly Available Distributed Messaging Queue Cluster with RabbitMQ-3.5.6
-What is rabbitmq?</p>
+            <p>Understanding Git Flow for(ubuntu-14.04):</p>
 
-<p>Rabbitmq is a robust yet easy to use messaging broker service for applications. Also referred as message-oriented middleware, rabbitmq implements Advanced Messaging Queue Protocol(AMQP).</p>
+<p>what is git flow?
+Usage?
+How can it be helpful?</p>
 
-<p>Rabbitmq server is written in Erlang programming language, and built on top of Open Telecom Platform framework for clustering and fail-over. Client libraries to interface with the broker are available for all major programming languages.</p>
+<p>Install git flow using the below command:</p>
 
-<p>Rabbitmq runs on all major operating systems and supports a huge number of developer platforms. Besides being open source, rabbitmq is also commercially supported.</p>
+<p>sudo apt-get install git-flow</p>
 
-<p>Firewall Settings(Listening ports):
-amqp - 5672
-clustering - 25672
-management nodes - 15672</p>
+<p>Starting with git flow:
+To start with git flow, you first need to initialize it inside an existing repository. This is done by using the below command:</p>
 
-<p>How do we install rabbitmq?
-Prerequisites:
-Network connection between nodes must be reliable.</p>
+<p>git flow init</p>
 
-<p>All nodes must run the same version of Erlang and RabbitMQ.</p>
+<p>In-case you want to force re-initialization of git flow, you can use the same command and pass -f as an argument
+eg: git flow init -f</p>
 
-<p>All TCP ports should be open between nodes, see the firewall section above.</p>
+<p>So far cool, this is dead simple, isn&#39;t it? Now let&#39;s see what happens once we do a git flow init. We&#39;ll have to answer a few questions regarding the naming conventions for our branches. For simplicity it is recommended to use the default values.</p>
 
-<p>Host entries across the nodes should be the same:
-In the /etc/hosts file of your system, append the hostname corresponding to the IP address, and the same data should be present across all the machines in the cluster to maintain uniformity. e.g. we have 3 machines:</p>
+<p>$ git flow init -f</p>
 
-<p>a.b.c.d with hostname as rabbitmq1
-e.f.g.h with hostname as rabbitmq2
-i.j.k.l with hostname as rabbitmq3
-then in the /etc/hosts on all the 3 machines, add the below lines:</p>
+<p>Which branch should be used for bringing forth production releases?
+   - develop
+   - feature/lint_cleanup
+   - master
+Branch name for production releases: [master] </p>
 
-<p>a.b.c.d rabbitmq1
-e.f.g.h rabbitmq2
-i.j.k.l rabbitmq3
-and that should suffice to solve your issues with host entries. Rabbitmq is very sensitive towards hostnames, hence this step is of quiet importance. Once done, do verify if the nodes are ping-able from every node.</p>
+<p>Which branch should be used for integration of the &quot;next release&quot;?
+   - develop
+   - feature/lint_cleanup
+Branch name for &quot;next release&quot; development: [develop] </p>
 
-<p>For installing rabbitmq-server, use the below commands:
-sudo apt-get install -fy erlang-nox python-pip git-core python-setuptools git-core
-wget https://www.rabbitmq.com/releases/rabbitmq-server/v3.5.6/rabbitmq-server<em>3.5.6-1</em>all.deb
-sudo dpkg -i rabbitmq-server<em>3.5.6-1</em>all.deb
-and there you go, your rabbitmq-server should be up and running. You can verifythis by the below command:</p>
+<p>How to name your supporting branch prefixes?
+Feature branches? [feature/] 
+Release branches? [release/] 
+Hotfix branches? [hotfix/] 
+Support branches? [support/] 
+Version tag prefix? [] </p>
 
-<p>sudo service rabbitmq-server status</p>
+<p>******************<strong><em>Creating/Deleting a tag</em></strong>***************************</p>
 
-<p>Now to setup your rabbitmq cluster with slave nodes, please follow the below steps:
-sudo apt-get install -fy erlang-nox python-pip git-core python-setuptools git-core
-sudo pip install pika==0.10.0 or pip install pika==0.10.0(if using virtual-env)
-wget https://www.rabbitmq.com/releases/rabbitmq-server/v3.5.6/rabbitmq-server<em>3.5.6-1</em>all.deb
-sudo dpkg -i rabbitmq-server<em>3.5.6-1</em>all.deb
-Synchronizing the erlang.cookie file across all the machines:
-This is again a very important step for setting up rabbitmq cluster. The file itself is storing the value without a carriage return nor a line feed. This value needs to go into the slaves the same way as it is on the master.</p>
+<h2>Deleting a tag:</h2>
 
-<p>First stop the rabbitmq-server on all the slave machines using the below command:</p>
+<p>dk@typHooN:~/git/kndnc$ git tag -d ndnc<em>crm</em>api 
+Deleted tag &#39;ndnc<em>crm</em>api&#39; (was 61b95e7)
+dk@typHooN:~/git/kndnc$ git tag -d ndnc<em>grafana</em>integration 
+Deleted tag &#39;ndnc<em>grafana</em>integration&#39; (was 8d955ec)
+dk@typHooN:~/git/kndnc$ git status 
+On branch develop
+Your branch is up-to-date with &#39;origin/develop&#39;.</p>
 
-<p>sudo service rabbitmq-server stop
-echo -n &quot;<contents of .erlang.cookie form master server>&quot; &gt; /var/lib/rabbitmq/.erlang.cookie
-eg: echo -n &quot;DQRRLCTUGOBCRFNPIABC&quot; &gt; /var/lib/rabbitmq/.erlang.cookie</p>
-
-<p>The file should be exactly the same as it is on the master server also ensuring that the permission level for all these file is &quot;400&quot; and the ownership of this file remains with rabbitmq user.</p>
-
-<p>Rabbitmq uses mnesia db as it&#39;s default, make sure you delete mnesia before starting rabbitmqserver:
-sudo rm -rf /var/lib/mnesia</p>
-
-<p>Starting the rabbitmq-server:
-Now that the .erlang.cookie file has been synced(manually) from the master node to all the slave nodes, and the mnesia db has also been deleted, we are good to go and start the rabbitmq-server.</p>
-
-<p>sudo service rabbitmq-server start
-sudo rabbitmqctl stop<em>app
-sudo rabbitmqctl reset
-sudo rabbitmqctl join</em>cluster rabbit@rabbitmq1 (assuming rabbitmq1 as master)
-sudo rabbitmqctl start_app
-RabbitMq can screw your cluster formation, if you do are not taking care of the host name and the entries inside /etc/hosts file properly.</p>
-
-<p>Check the cluster status using the below command:
-sudo rabbitmqctl cluster_status</p>
-
-<p>Set the HA Policy:</p>
-
-<p>The following command will sync all the queues across all nodes:</p>
-
-<p>rabbitmqctl set_policy ha-all &quot;&quot; &#39;{&quot;ha-mode&quot;:&quot;all&quot;,&quot;ha-sync-mode&quot;:&quot;automatic&quot;}&#39;</p>
-
-<p>Enabling the user management plugin:
-Rabbitmq also provides with a simple management console. The console can be enabled for each machine using the below command:</p>
-
-<p>sudo rabbitmq-plugins enable rabbitmq_management</p>
-
-<p>Now you can access the console on the following address: &quot;http://<rabbitmq machine ip with plugin enabled>:15672&quot;</p>
-
-<p>It will ask for user id and password. you need to provide the user id and password for authentication.</p>
-
-<p>In-case you have not yet created any user, the you can do so by the below commands:
-sudo rabbitmqctl add<em>user <user id> <password>
-sudo rabbitmqctl set</em>user<em>tags <user id> administrator
-sudo rabbitmqctl set</em>permissions -p / <user id> &quot;.<em>&quot; &quot;.</em>&quot; &quot;.*&quot;</p>
+<p>nothing to commit, working directory clean
+dk@typHooN:~/git/kndnc$ git push origin :refs/tags/ndnc<em>crm</em>api
+To git@bitbucket.org:knowlarity<em>team/kndnc.git
+ - [deleted]         ndnc</em>crm<em>api
+dk@typHooN:~/git/kndnc$ git push origin :refs/tags/ndnc</em>grafana<em>integration
+To git@bitbucket.org:knowlarity</em>team/kndnc.git
+ - [deleted]         ndnc<em>grafana</em>integration</p>
 
 
         </section>
@@ -246,15 +211,15 @@ sudo rabbitmqctl set</em>permissions -p / <user id> &quot;.<em>&quot; &quot;.</e
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=Creating a Highly Available Distributed Messaging System&amp;url=http://hellodk.github.io/Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6"
+                <a class="icon-twitter" href="http://twitter.com/share?text=Understanding Git-FLow&amp;url=http://hellodk.github.io/understanding_git_flow"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.github.io/Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6"
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.github.io/understanding_git_flow"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.github.io/Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6"
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.github.io/understanding_git_flow"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
@@ -273,20 +238,20 @@ sudo rabbitmqctl set</em>permissions -p / <user id> &quot;.<em>&quot; &quot;.</e
 
     <!-- [[! next_post ]] -->
     
-        <a class="read-next-story " style="background-image: url(/assets/images/cover4.jpg)" href="/5_interesting_cloud_predictions_2016">
+        <a class="read-next-story " style="background-image: url(/assets/images/Minion-in-Despicable-Me-2-Wallpaper-HD-1080p.jpg)" href="/Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6">
             <section class="post">
-                <h2>5 interesting cloud predictions for 2016</h2>
-                <p>1. It's time for IOT- The IOT or the Internet of Things has been a...</p>
+                <h2>Creating a Highly Available Distributed Messaging System</h2>
+                <p>Creating a Highly Available Distributed Messaging Queue Cluster with RabbitMQ-3.5.6 What is rabbitmq? Rabbitmq is...</p>
             </section>
         </a>
     
     <!-- [[! /next_post ]] -->
     <!-- [[! prev_post ]] -->
     
-        <a class="read-next-story prev " style="background-image: url(/assets/images/cover4.jpg)" href="/understanding_git_flow">
+        <a class="read-next-story prev " style="background-image: url(/assets/images/cover4.jpg)" href="/going_agentless_with_ansible">
             <section class="post">
-                <h2>Understanding Git-FLow</h2>
-                <p><p>Understanding Git Flow for(ubuntu-14.04):</p> <p>what is git flow? Usage? How can it be helpful?</p> <p>Install...</p>
+                <h2>Going Agntless with Ansible</h2>
+                <p><p>While looking for a light yet powerful Configuration Management tool, I was going through some...</p>
             </section>
         </a>
     

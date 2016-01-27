@@ -242,6 +242,76 @@ nodetool -host 10.60.8.23 ring</p>
 	</item>
 
 	<item>
+	  <title>Understanding Git-FLow</title>
+	  <link>//understanding_git_flow</link>
+	  <author>Deepak Kumar Gupta</author>
+	  <pubDate>2015-11-09T00:00:00+05:30</pubDate>
+	  <guid>//understanding_git_flow</guid>
+	  <description><![CDATA[
+	     <p>Understanding Git Flow for(ubuntu-14.04):</p>
+
+<p>what is git flow?
+Usage?
+How can it be helpful?</p>
+
+<p>Install git flow using the below command:</p>
+
+<p>sudo apt-get install git-flow</p>
+
+<p>Starting with git flow:
+To start with git flow, you first need to initialize it inside an existing repository. This is done by using the below command:</p>
+
+<p>git flow init</p>
+
+<p>In-case you want to force re-initialization of git flow, you can use the same command and pass -f as an argument
+eg: git flow init -f</p>
+
+<p>So far cool, this is dead simple, isn&#39;t it? Now let&#39;s see what happens once we do a git flow init. We&#39;ll have to answer a few questions regarding the naming conventions for our branches. For simplicity it is recommended to use the default values.</p>
+
+<p>$ git flow init -f</p>
+
+<p>Which branch should be used for bringing forth production releases?
+   - develop
+   - feature/lint_cleanup
+   - master
+Branch name for production releases: [master] </p>
+
+<p>Which branch should be used for integration of the &quot;next release&quot;?
+   - develop
+   - feature/lint_cleanup
+Branch name for &quot;next release&quot; development: [develop] </p>
+
+<p>How to name your supporting branch prefixes?
+Feature branches? [feature/] 
+Release branches? [release/] 
+Hotfix branches? [hotfix/] 
+Support branches? [support/] 
+Version tag prefix? [] </p>
+
+<p>******************<strong><em>Creating/Deleting a tag</em></strong>***************************</p>
+
+<h2>Deleting a tag:</h2>
+
+<p>dk@typHooN:~/git/kndnc$ git tag -d ndnc<em>crm</em>api 
+Deleted tag &#39;ndnc<em>crm</em>api&#39; (was 61b95e7)
+dk@typHooN:~/git/kndnc$ git tag -d ndnc<em>grafana</em>integration 
+Deleted tag &#39;ndnc<em>grafana</em>integration&#39; (was 8d955ec)
+dk@typHooN:~/git/kndnc$ git status 
+On branch develop
+Your branch is up-to-date with &#39;origin/develop&#39;.</p>
+
+<p>nothing to commit, working directory clean
+dk@typHooN:~/git/kndnc$ git push origin :refs/tags/ndnc<em>crm</em>api
+To git@bitbucket.org:knowlarity<em>team/kndnc.git
+ - [deleted]         ndnc</em>crm<em>api
+dk@typHooN:~/git/kndnc$ git push origin :refs/tags/ndnc</em>grafana<em>integration
+To git@bitbucket.org:knowlarity</em>team/kndnc.git
+ - [deleted]         ndnc<em>grafana</em>integration</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Going Agntless with Ansible</title>
 	  <link>//going_agentless_with_ansible</link>
 	  <author>Deepak Kumar Gupta</author>

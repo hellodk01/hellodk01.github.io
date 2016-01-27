@@ -47,6 +47,15 @@ What is rabbitmq?
       <dc:date>2015-12-19T15:48:00+05:30</dc:date>
     </item>
     <item>
+      <title>Understanding Git-FLow</title>
+      <link>http://hellodk.github.io//understanding_git_flow</link>
+      <description>Understanding Git Flow for(ubuntu-14.04):
+
+</description>
+      <pubDate>Mon, 09 Nov 2015 00:00:00 +0530</pubDate>
+      <dc:date>2015-11-09T00:00:00+05:30</dc:date>
+    </item>
+    <item>
       <title>Going Agntless with Ansible</title>
       <link>http://hellodk.github.io//going_agentless_with_ansible</link>
       <description>While looking for a light yet powerful Configuration Management tool, I was going through some of the various available tools, and came across Ansible. After having a quick look at the features, something which caught my attention: &quot;Ansible is agent-less&quot;, hence I decided to give it a try. Having used Ansible for some around more than 8+ months configuration management, I personally feel...Ansible is awesome!!
